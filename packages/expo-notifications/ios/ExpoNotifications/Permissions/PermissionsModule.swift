@@ -29,8 +29,8 @@ public class PermissionsModule: Module {
     AsyncFunction("requestPermissionsAsync") { (requestedPermissions: NotificationPermissionRecord, promise: Promise) in
       let defaultAuthorizationOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
       let options = requestedPermissions.numberOfOptionsRequested() > 0
-        ? requestedPermissions.authorizationOptionValue()
-        : defaultAuthorizationOptions
+      ? requestedPermissions.authorizationOptionValue()
+      : defaultAuthorizationOptions
       requester.setAuthorizationOptions(options)
 
       // Call `requestAuthorization` directly to ensure new options are always

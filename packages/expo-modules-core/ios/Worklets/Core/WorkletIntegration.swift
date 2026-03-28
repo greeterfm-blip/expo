@@ -1,6 +1,7 @@
 // Copyright 2025-present 650 Industries. All rights reserved.
 
 import ExpoModulesCore
+import ExpoModulesJSI
 
 /// Registers the worklet runtime factory with ExpoModulesCore.
 /// This is called automatically via +load in WorkletIntegrationLoader.mm.
