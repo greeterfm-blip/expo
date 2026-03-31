@@ -50,7 +50,7 @@ function TextInputAnchor({
   enabled?: boolean;
 }) {
   return (
-    <TextInput defaultValue={value} onChangeText={() => {}} key={value} readOnly enabled={enabled}>
+    <TextInput defaultValue={value} key={value} readOnly enabled={enabled}>
       <DropdownArrow expanded={expanded} />
     </TextInput>
   );
